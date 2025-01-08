@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const myDiv = document.getElementById('myDiv');
+      //Now access the div safely
+      if(myDiv){
+        console.log(myDiv.textContent);
+      }
+    });
+  </script>
+</body>
+</html>
